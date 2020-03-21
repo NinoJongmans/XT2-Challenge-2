@@ -4,9 +4,45 @@
         <meta charset="UTF-8">
         <title>Klok bemanning SpaceX</title>
         <link type="text/css" rel="stylesheet" href="css/style.css" />
-        <script src="js/main.js"></script>
+        <script src="js/main.js" defer></script>
     </head>
-    <body>
-        
+    <body onload="startKlok(), verkrijgZone(), datum()">
+       <main>
+          <img class="wolk1" src="images/wolk.png" />
+          <img id="maan" class="maan" src="images/maan.png" />
+          <img id="zon" class="zon" src="images/zon.png" />
+          <img class="wolk2" src="images/wolk.png" />
+           <section class="container">
+               <section class="dagdeel">
+                   <div id="dagdeeltekst" class="dagdeeltekst"></div>
+                   <div id="dagdeelp" class="dagdeelp"></div>
+               </section>
+               <section class="uren">
+                   <div id="uren"></div><br/>
+                   <p>UREN</p>
+               </section>
+               <section class="minuten">
+                   <div id="minuten"></div><br/>
+                   <p>MINUTEN</p>
+               </section>
+               <section class="seconden">
+                   <div id="seconden"></div><br/>
+                   <p>SECONDEN</p>
+               </section>
+               <section class="datum">
+                   <div id="datum"></div>
+               </section>
+               <section class="gmt">
+                   <div id="tijd"></div>
+                   <select id="tijdzones">
+                      <option value="kies">Selecteer hier een tijdzone</option>
+                      <option value="lnd">London UTC + 0</option>
+                      <option value="ams">Amsterdam UTC + 1</option>
+                      <option value="la">Los Angeles UTC - 8</option>
+                      <option value="ny">New York UTC - 5</option>
+                   </select>
+               </section>
+           </section>
+       </main>
     </body>
 </html>
