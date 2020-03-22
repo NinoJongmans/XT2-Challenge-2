@@ -22,6 +22,10 @@ function verkrijgZone() {
         var tijdzone = -5;   
         document.getElementById("tijd").innerHTML = "UTC - 5";
     }
+    else if (selectedNode.value == "tk") {
+        var tijdzone = 8;   
+        document.getElementById("tijd").innerHTML = "UTC + 8";
+    }
     else{
         var tijszone = 0;
     }
@@ -49,6 +53,7 @@ function startKlok() {
   else {
       document.body.style.background = "rgba(2,64,118,1)";
       document.getElementById("zon").style.visibility = "hidden";
+      document.getElementById("maan").style.visibility = "visible";
       document.getElementById("dagdeeltekst").innerHTML = "Goedenavond";
       document.getElementById("dagdeelp").innerHTML = "Tijd om te gaan slapen.";
   }
@@ -59,6 +64,7 @@ function startKlok() {
       document.getElementById("dagdeelp").innerHTML = "Tijd om te gaan slapen.";
       document.getElementById("maan").style.visibility = "visible";
   }
+     
   h = controleerTijd(h);
   m = controleerTijd(m);
   s = controleerTijd(s);
