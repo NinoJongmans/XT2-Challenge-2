@@ -151,6 +151,9 @@ body {
     z-index: -20;
     margin-left: -75%;
     }
+    .zon {
+        max-width: 800px;
+    }
     #datum {
         font-size: 21px;
     }
@@ -226,6 +229,10 @@ body {
     .uren > p, .minuten > p, .seconden > p {
     font-size: 20px;
 }
+    .zon {
+    width: 20%;
+    margin-top: 0%;
+}
 }    
 
 
@@ -285,5 +292,9 @@ body {
     }
     .uren > p, .minuten > p, .seconden > p {
     font-size: 20px;
+}
+        .zon {
+    width: 20%;
+    margin-top: 0%;
 }
 }
