@@ -33,7 +33,6 @@ body {
     background-color: white;
     text-align: center;
 }
-
 .uren{
     grid-area: uren;
     background-color: #4F646F;
@@ -89,6 +88,10 @@ body {
     position: absolute;
     z-index: -20;
     margin-left: -70%;
+}
+.zon {
+    width: 40%;
+    margin-top: -5%;
 }
 #tijd {
     padding-bottom: 10px;
