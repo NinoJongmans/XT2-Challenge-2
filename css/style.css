@@ -92,6 +92,7 @@ body {
 }
 #tijd {
     padding-bottom: 10px;
+    font-weight: bold;
 }
 #datum {
     padding: 3%;
