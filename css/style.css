@@ -80,7 +80,7 @@ body {
 .wolk2 {
     position: absolute;
     width: 70%;
-    margin-left: -275px;
+    margin-left: -51%;
     margin-top: 30px;
     animation: 1000ms bewegen infinite alternate ease-in-out;
 }
@@ -88,7 +88,7 @@ body {
     width: 30%;
     position: absolute;
     z-index: -20;
-    margin-left: -350px;
+    margin-left: -70%;
 }
 #tijd {
     padding-bottom: 10px;
@@ -96,6 +96,9 @@ body {
 #datum {
     padding: 3%;
     font-weight: bold;
+}
+.uren > p, .minuten > p, .seconden > p {
+    font-size: 12px;
 }
 @keyframes bewegen {
     0% { 
@@ -155,6 +158,9 @@ body {
   	top: 25px;
     }
     }
+    .uren > p, .minuten > p, .seconden > p {
+    font-size: 20px;
+}
 }
 
 
@@ -166,15 +172,15 @@ body {
         grid-template-areas: 
         "dagdeel dagdeel dagdeel dagdeel"
         "uren minuten seconden ."
-        "datum datum gmt gmt"
-            ;
-        grid-column-gap: 30px;
+        "datum datum gmt gmt";
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
         margin-top: 3%;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: space-evenly;
 }
     .gmt {
-        max-width: 84%;
+        max-width: 85%;
     }
     .maan, .zon {
     width: 16%;
@@ -213,6 +219,9 @@ body {
   	top: 25px;
     }
     }
+    .uren > p, .minuten > p, .seconden > p {
+    font-size: 20px;
+}
 }    
 
 
@@ -225,6 +234,7 @@ body {
         "uren minuten seconden ."
         "datum datum gmt gmt";
         grid-column-gap: 20px;
+        grid-row-gap: 20px;
         margin-top: 0%;
         grid-template-columns: 1fr 1fr 1fr;
 }
@@ -269,4 +279,7 @@ body {
   	top: 25px;
     }
     }
+    .uren > p, .minuten > p, .seconden > p {
+    font-size: 20px;
+}
 }
